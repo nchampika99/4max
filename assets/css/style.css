@@ -1,0 +1,97 @@
+.error { border-color: #dc2626 !important; }
+.hero-video::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, rgba(220, 38, 38, 0.1) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+@media (max-width: 768px) {
+    .hero-video video { height: 400px; }
+}
+
+/* Add custom animations here */
+/* Product Card Hover Effect */
+.product-item:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Service Card Icon Animation */
+.service-card:hover i {
+    animation: iconPulse 0.8s ease infinite alternate;
+}
+
+@keyframes iconPulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+/* Filter Button Transitions */
+.filter-btn {
+    transition: all 0.2s ease;
+}
+
+/* Price Tag Animation */
+.product-item:hover .text-red-500 {
+    color: #ff6b6b;
+    transition: color 0.3s ease;
+}
+
+
+/* Video Hero Section */
+.hero-video {
+    min-height: 600px;
+}
+
+@media (max-width: 768px) {
+    .hero-video video {
+        height: 400px;
+    }
+    
+    .hero-video h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Login
+--------------------------------------------------------------*/
+#login{
+    margin-top: -60px;
+    margin-bottom: -60px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+  
+  body{
+      font-family: 'Poppins', sans-serif;
+      background: #ececec;
+  }
+  
+  /*------------ Login container ------------*/
+  
+  .box-area{
+      width: 930px;
+  }
+  
+  /*------------ Right box ------------*/
+  
+  .right-box{
+      padding: 40px 30px 40px 40px;
+  }
+  
+  /*------------ Custom Placeholder ------------*/
+  
+  ::placeholder{
+      font-size: 16px;
+  }
+  
+  .rounded-4{
+      border-radius: 20px;
+  }
+  .rounded-5{
+      border-radius: 30px;
+  }
